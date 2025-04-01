@@ -1,0 +1,7 @@
+EXPORTS
+    _Z8isbase64c @1
+    base64_decode_alloc_ctx @2
+    base64_decode_ctx @3
+    base64_decode_ctx_init @4
+    base64_encode @5
+    base64_encode_alloc @6
