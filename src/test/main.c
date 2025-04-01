@@ -31,7 +31,6 @@ int main(int argc, char** argv)
 		char* decode;
 		struct base64_decode_context ctx;
 		base64_decode_alloc_ctx(&ctx, str, inlen, &decode, &inlen);
-		decode[inlen] = '\0';
 		printf("%s", decode);
 		
 		return 1;

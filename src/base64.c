@@ -397,6 +397,8 @@ bool base64_decode_ctx(struct base64_decode_context* ctx, const char* in, size_t
 	}
 	
 	*outlen -= outleft;
+	if(outlen)
+		*out = '\0';
 	
 	return inlen == 0;
 }
