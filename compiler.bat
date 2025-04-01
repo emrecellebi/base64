@@ -11,8 +11,8 @@ set INCLUDE=-I ./include
 set DEF_FILE=--output-def,./def/%NAME%.def
 set LIB_FILE=--out-implib,./lib/%NAME%.a
 
-g++ -c ./src/*.cpp %INCLUDE%
-g++ -shared -o ./bin/%NAME%.dll *.o -Wl,%DEF_FILE%,%LIB_FILE% %LIB_ARGS%
+gcc -c ./src/*.c %INCLUDE%
+gcc -shared -o ./bin/%NAME%.dll *.o -Wl,%DEF_FILE%,%LIB_FILE% %LIB_ARGS%
 
 REM dll veya so dosyları olmadan linkme yapılır.
 ar rcs ./lib/%NAME%lib.a *.o

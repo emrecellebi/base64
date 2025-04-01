@@ -2,6 +2,7 @@
 #define BASE64_H
 
 #include <stddef.h>
+#include <stdbool.h>
 
 #ifdef __cplusplus
 extern "C" {
