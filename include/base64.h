@@ -16,6 +16,7 @@ struct base64_decode_context
 	char buf[4];
 };
 
+extern bool isbase64(char ch);
 extern void base64_encode(const char* in, size_t inlen, char* out, size_t outlen);
 extern void base64_decode_ctx_init(struct base64_decode_context* ctx);
 extern bool base64_decode_ctx(struct base64_decode_context* ctx, const char* in, size_t inlen, char* out, size_t* outlen);
